@@ -1,0 +1,12 @@
+@import './template/reset.scss';
+@import './template/header.scss';
+
+@import './template/slider.scss';
+@import './template/goods.scss';
+@import './template/card.scss';
+
+.container {
+    width: 960px;
+    margin: 0 auto;
+    padding: 0 20px;
+}

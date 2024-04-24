@@ -1,0 +1,13 @@
+.goods {
+    &__nav {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 30px;
+    }
+
+    &__title {
+        font-weight: 700;
+        font-size: 32px;
+        color: #000;
+    }
+}
