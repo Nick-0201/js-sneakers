@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
 html,
 body,
 div,
@@ -142,6 +143,7 @@ table {
   justify-content: space-between;
 }
 .header__logo {
+  cursor: pointer;
   display: flex;
   align-items: center;
 }
@@ -199,15 +201,51 @@ table {
   border: 1px solid #f3f3f3;
   border-radius: 40px;
   padding: 20px 30px 34px 30px;
-  width: 100%;
-  height: 100%;
+  display: inline-block;
+  box-sizing: border-box;
+  width: 210px;
+  height: 260px;
 }
-.card__img {
-  width: 133px;
-  height: 112px;
+.card__top {
+  position: relative;
 }
-.card__img img {
+.card__like {
+  position: absolute;
+  top: 0;
+  left: 0;
+  cursor: pointer;
+}
+.card__image {
   width: 100%;
+}
+.card__name {
+  width: 150px;
+  font-weight: 400;
+  font-size: 14px;
+  color: #000;
+  margin: 14px 0;
+}
+.card__bottom {
+  display: flex;
+  justify-content: space-between;
+}
+.card__value span {
+  font-weight: 500;
+  font-size: 11px;
+  text-transform: uppercase;
+  color: #bdbdbd;
+}
+.card__price {
+  font-weight: 700;
+  font-size: 14px;
+  color: #000;
+}
+.card__add {
+  cursor: pointer;
+}
+
+body {
+  font-family: "Inter", sans-serif;
 }
 
 .container {
