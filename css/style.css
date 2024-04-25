@@ -1,4 +1,18 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+.wrapper {
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  background: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
 html,
 body,
 div,
@@ -186,6 +200,41 @@ table {
   padding: 45px 0 40px 0;
 }
 
+.drawer {
+  position: absolute;
+  background: #fff;
+  width: 400px;
+  height: 100%;
+  right: 0;
+  top: 0;
+  padding: 30px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.drawer__title {
+  font-weight: 700;
+  font-size: 24px;
+  color: #000;
+}
+.drawer__box {
+  border: 1px solid #f3f3f3;
+  border-radius: 20px;
+  width: 100%;
+  height: 119px;
+  box-sizing: border-box;
+  padding: 20px;
+  display: flex;
+}
+.drawer__img {
+  width: 70px;
+  height: 70px;
+}
+.drawer__img img {
+  width: 100%;
+}
+
 .goods__nav {
   display: flex;
   justify-content: space-between;
@@ -205,6 +254,13 @@ table {
   box-sizing: border-box;
   width: 210px;
   height: 260px;
+  transition: 0.5s;
+}
+.card:hover {
+  box-shadow: 0 14px 30px 0 rgba(0, 0, 0, 0.05);
+  background: #fff;
+  transform: translateY(-10px);
+  transition: 0.5s;
 }
 .card__top {
   position: relative;
@@ -214,6 +270,21 @@ table {
   top: 0;
   left: 0;
   cursor: pointer;
+  height: 32px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+.card__like:hover {
+  box-shadow: 0 14px 30px 0 rgba(0, 0, 0, 0.05);
+  background: #fff;
+  transition: 0.3s;
+}
+.card__like img {
+  transition: 0.3s;
+}
+.card__like.active img {
+  transform: translateY(-32px);
 }
 .card__image {
   width: 100%;
@@ -242,6 +313,21 @@ table {
 }
 .card__add {
   cursor: pointer;
+  height: 32px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+.card__add:hover {
+  box-shadow: 0 14px 30px 0 rgba(0, 0, 0, 0.05);
+  background: #fff;
+  transition: 0.3s;
+}
+.card__add img {
+  transition: 0.3s;
+}
+.card__add.active img {
+  transform: translateY(-32px);
 }
 
 body {

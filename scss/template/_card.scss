@@ -6,6 +6,14 @@
     box-sizing: border-box;
     width: 210px;
     height: 260px;
+    transition: 0.5s;
+
+    &:hover {
+        box-shadow: 0 14px 30px 0 rgba(0, 0, 0, 0.05);
+        background: #fff;
+        transform: translateY(-10px);
+        transition: 0.5s;
+    }
 
     &__top {
         position: relative;
@@ -16,6 +24,25 @@
         top: 0;
         left: 0;
         cursor: pointer;
+        height: 32px;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+
+        &:hover {
+            box-shadow: 0 14px 30px 0 rgba(0, 0, 0, 0.05);
+            background: #fff;
+            transition: 0.3s;
+        }
+
+        img {
+            transition: 0.3s;
+        }
+
+        &.active img {
+            transform: translateY(-32px);
+        }
+
     }
 
     &__image {
@@ -52,5 +79,24 @@
 
     &__add {
         cursor: pointer;
+        height: 32px;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+
+        &:hover {
+            box-shadow: 0 14px 30px 0 rgba(0, 0, 0, 0.05);
+            background: #fff;
+            transition: 0.3s;
+        }
+
+        img {
+            transition: 0.3s;
+        }
+
+        &.active img {
+            transform: translateY(-32px);
+        }
+
     }
 }
